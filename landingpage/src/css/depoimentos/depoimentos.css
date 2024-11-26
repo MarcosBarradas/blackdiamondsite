@@ -1,0 +1,67 @@
+.depoimentos {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column;
+}
+.depoimentos h2 {
+    margin-block: 3rem;
+    font-size: 2rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+.depoimentos-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.depoimentos-cards-depoimento {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 380px;
+    background-color: var(--cards-color);
+    box-shadow: var(--cards-boxshadow);
+    border-radius: 18px;
+    padding: 1.5rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: auto;
+}
+
+.depoimentos-cards-depoimento-texto {
+    font-size: 1rem;
+    color: var(--default);
+    line-height: 1.5rem;
+}
+
+.depoimentos-cards-depoimento-cliente {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.depoimentos-cards-depoimento-cliente img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.depoimentos-cards-depoimento-cliente-identidade {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.2rem;
+}
+.depoimentos-cards-depoimento-cliente-identidade-nome {
+    font-size: .875rem;
+    font-weight: 500;
+}
+.depoimentos-cards-depoimento-cliente-identidade-ramo {
+    font-size: .75rem;
+}

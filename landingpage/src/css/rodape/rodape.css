@@ -1,0 +1,55 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+    gap: 2rem;
+    width: 80%;
+    margin-inline: auto;
+    border-top: 1px solid var(--gray);
+    padding-top: 3rem;
+}
+.rodape h1 {
+    font-size: 2rem;
+    font-weight: 500rem;
+
+}
+.duvidas li label{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.duvidas li h2 {
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+    margin-top: 1rem;
+}
+.duvidas li h2:hover {
+    color: black;
+}
+.duvidas li label p {
+    display: none; 
+    text-align: start;
+
+}
+#check-duvida1, #check-duvida2, #check-duvida3, #check-duvida4 {
+    display: none;
+}
+
+/*condicional checkbox*/
+#check-duvida1:checked ~ label[for="check-duvida1"] p {
+    display: block;
+}
+#check-duvida2:checked ~ label[for="check-duvida2"] p {
+    display: block;
+}
+#check-duvida3:checked ~ label[for="check-duvida3"] p {
+    display: block;
+}
+#check-duvida4:checked ~ label[for="check-duvida4"] p {
+    display: block;
+}

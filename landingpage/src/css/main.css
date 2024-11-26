@@ -1,0 +1,112 @@
+@import '/src/css/depoimentos/depoimentos.css';
+@import '/src/css/descricao-empresa/descricao-empresa.css';
+@import '/src/css/header/header.css';
+@import '/src/css/hero/hero.css';
+@import '/src/css/hero/hero-cards.css';
+@import '/src/css/hero/hero-clientes.css';
+@import '/src/css/hero/hero-nossas-marcas.css';
+@import '/src/css/reset/reset.css';
+@import '/src/css/rodape/rodape.css';
+@import '/src/css/tipos-clientes/tipos-clientes.css';
+@import '/src/css/tipos-clientes/tipos-clientes.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--default);
+    font-family:'Poppins', sans-serif ;
+    background: #F5F5F7;
+    background-size: cover;/*342*/
+    min-height: 100vh;
+    background-position: center;
+    width: 100%;
+}
+:root {
+    --cards-boxshadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.069);
+    --cards-color:#ffffff;
+    --default: #313131;
+    --azul: rgb(0, 0, 225);
+    --roxo-azulado: #0015b2;
+    --azul-piscina: rgb(0, 176, 211);
+    --azul-cinza-claro: #4c94c4;
+    --azul-diamante: #006eaa;
+    --gray: #6E6E73;
+    --fundo: #F5F5F7;
+    
+        --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
+        --item1-filter: blur(30px);
+        --item1-zIndex: 11;
+        --item1-opacity: 0;
+    
+        --item2-transform: translateX(0);
+        --item2-filter: blur(0px);
+        --item2-zIndex: 10;
+        --item2-opacity: 1;
+    
+        --item3-transform: translate(50%,10%) scale(0.8);
+        --item3-filter: blur(10px);
+        --item3-zIndex: 9;
+        --item3-opacity: 1;
+    
+        --item4-transform: translate(90%,20%) scale(0.5);
+        --item4-filter: blur(30px);
+        --item4-zIndex: 8;
+        --item4-opacity: 1;
+        
+        --item5-transform: translate(120%,30%) scale(0.3);
+        --item5-filter: blur(40px);
+        --item5-zIndex: 7;
+        --item5-opacity: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+#icone-checked {
+    color: green;
+    font-size: 1.5rem;
+}
+.brilho {
+    
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg,  var(--roxo-azulado),var(--azul-diamante), var(--azul-piscina), var(--azul-piscina),var(--azul-diamante), var(--azul-diamante));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.redirecionar {
+    margin-top: 1rem;
+    color: rgb(249, 249, 249);
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+    background: linear-gradient(45deg,  var(--roxo-azulado), var(--azul-diamante),var(--azul-piscina),var(--azul-diamante));
+    padding: 1.5rem;
+    transition: color 0.2s ease;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.124);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 1s ease;
+}
+
+.redirecionar:hover {
+    color: white;
+    background:  var(--azul-diamante);
+    transform: scale(1.01);
+    box-shadow: 1px 1px 5px 7px rgba(0, 0, 0, 0.124);;
+} 
+
+.contatar-link {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
