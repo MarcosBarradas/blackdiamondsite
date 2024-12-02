@@ -1,0 +1,59 @@
+.descricao-empresa {
+    box-sizing: border-box;
+    padding-top: 3rem;
+}
+.descricao-empresa h1{
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+.cards {
+    margin-block-start: 3.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: stretch;
+   
+}
+.card {
+    display: block;
+    position: relative;
+    max-width: 380px;
+    padding: 2.8rem;
+    background: var(--cards-color);
+    height: auto;
+    border-radius: 18px;
+    box-shadow: var(--cards-boxshadow);
+     transition: transform 0.3s ease, box-shadow 1s ease;
+     
+}
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 10px 15px 1px rgba(0, 0, 0, 0.128);
+}
+.card h2 {
+    font-size: 1.5rem;
+    padding-block: 1.2rem;
+    font-weight: 600;
+    color: var(--roxo-azulado);
+}
+.card p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.card a {
+    position: absolute;
+    
+}
+
+
+.card #icone-descritivo {
+font-size: 2rem;
+}
+
+
+

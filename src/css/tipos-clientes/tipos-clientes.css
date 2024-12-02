@@ -1,0 +1,103 @@
+.tipos-clientes {
+    background: var(--cards-color);
+    
+    box-shadow: var(--cards-boxshadow);
+    border-radius: 18px;
+    text-align: center;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 7rem;
+    padding: 3.75rem;
+    margin-bottom: 2rem;
+}
+.clientes-maiores {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.clientes-maiores-titulo h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg,  var(--roxo-azulado), var(--azul-diamante),var(--azul-piscina),var(--azul-diamante));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.clientes-maiores-titulo h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.clientes-container {
+    display: flex;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  
+}
+.clientes-container .clientes-lista {
+    min-width: 350px;
+    line-height: 1.35rem;
+}
+.clientes-container div, .clientes-container .clientes-lista {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.clientes-container div img {
+    width: 90%;
+    min-width: 230px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.lista-cliente {
+    padding-block: 2rem;
+    max-width: 500px;
+}
+.lista-cliente:nth-child(n+1):nth-child(-n+2) {
+    border-bottom: 1px solid var(--gray);
+}
+.lista-cliente h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+.lista-cliente p {
+    font-size: 1rem;
+    text-align: start;
+}
+.clientes-menores h1 {
+    margin-top: 3rem;
+    color: var(--gray);
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.clientes-menores-lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+   justify-content: center;
+}
+.clientes-menores-lista-mensagem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 200px;
+    
+}
+.clientes-menores-lista-mensagem p {
+    font-size: 1.125rem;
+}
